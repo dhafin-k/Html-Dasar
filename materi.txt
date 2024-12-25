@@ -1,0 +1,86 @@
+
+                  HTML (HyperText Markup Language)
+
+Void elements digunakan untuk elemen yang tidak memiliki konten, seperti <img> atau <br>.
+Non-void elements digunakan untuk elemen yang memerlukan konten atau struktur, seperti <p> atau <div>.
+
+Berikut adalah Kumpulan Entities dalam HTML :
+https://oinam.github.io/entities/
+ctrl + Left click untuk melihat web nya
+
+Berikut adalah Kumpulan Emoji dalam HTML :
+https://www.quackit.com/character_sets/emoji/emoji_v3.0/unicode_emoji_v3.0_characters_all.cfm
+
+        Link 
+Saat membuat Web, biasanya kita akan membuat banyak sekali halaman HTML 
+Untuk berpindah dari satu halaman ke halaman lain, kita biasanya jarang melakukannya secara manual dengan cara mengetikkannya 
+di search bar Web Browser 
+HTML memiliki fitur Link (Tautan), dimana kita bisa meng-klik Link tersebut, dan berpindah ke halaman HTML lain 
+Link tidak harus dalam bentuk Text, Link juga bisa dalam bentuk Gambar misalnya
+
+        Picture atau Media Responsif
+Selain untuk menampilkan gambar menggunakan tag img, di HTML juga bisa menggunakan tag picture untuk menampilkan gambar 
+Salah satu keuntungan menggunakan tag picture adalah
+kita bisa menggunakan beberapa lokasi gambar, dan bisa diatur sesuai dengan ukuran layar misalnya. 
+Jadi ketika di layar besar, kita bisa kirim gambar dengan ukuran besar, dan ketika di layar kecil, 
+kita bisa kirim gambar yang ukuran kecil
+
+Properti                         Kegunaan Utama                        Efek pada elemen
+Max-Width(maksimal ukuran)       Membatasi lebar maksimum elemen       Elemen tidak akan melebar melebihi batas yang ditentukan. 
+Min-Width(minimmal ukuran)       Menjamin lebar minimum elemen	       Elemen tidak akan mengecil lebih kecil dari batas tertentu. 
+
+        display Block
+Element yang memiliki nilai display block, selalu dimulai dengan baris baru. 
+Web browser secara otomatis menambahkan jarak / margin sebelum dan setelah element 
+Dan element dengan inlay display block, selalu mengambil ukuran penuh yang tersedia, 
+yag artinya dia akan meregang dari kiri dan kanan
+Contoh tag yang menggunakan nilai display block adalah:
+h1-h6, p, header, body, ul, li, ol, table, form, dan lain-lain
+
+        display Inline
+Sedangkan dalam display inline, element tidak dimulai dengan baris baru 
+Selain itu dalam display inline, element hanya menggunakan ukuran seperlunya saja 
+Contoh tag yang menggunakan nilai display inline: 
+a, b, i, em, button, strong, input, dan lain-lain
+
+        Div
+Div adalah salah satu tag di HTML yang memiliki nilai display block
+Div biasanya digunakan sebagai container (wadah) untuk beberapa element HTML
+
+        Span
+Tag <div> digunakan untuk elemen blok, sedangkan <span> cocok untuk elemen sebaris.
+Jika ingin memberi gaya berbeda pada setiap kata dalam teks, 
+seperti mewarnai kalimat "Aku adalah Progammer" per kata, 
+gunakan <span> untuk masing-masing kata, karena <p> akan mengubah seluruh teks sekaligus. 
+
+ Vidio
+Selain gambar, HTML juga mendukung untuk menampilkan video di halaman web yang kita buat 
+Namun perlu diperhatikan, tidak semua jenis video bisa dijalankan oleh Web Browser 
+Biasanya format video yang banyak digunakan adalah mp4, webm atau ogg 
+Untuk menampilkan video, kita bisa menggunakan tag.Tulis manual karna tidak ada snipet nya
+ <Vidio width="px" height="px">
+         <source src="" controls autoplay>
+ </Vidio>
+Tag video memiliki banyak atribut, 
+seperti width,height,
+autoplay agar video otomatis berjalan Untuk menampilkan video,                  Penting
+controls untuk menampilkan kontrol video seperti pause,titik tiga,volume,dll    Penting
+kita bisa gunakan tag source Sama seperti di picture, dan kita bisa menambahkan beberapa source
+
+        Audio
+Selain gambar, video, HTML juga mendukung untuk audio Untuk audio, 
+kita bisa menggunakan tag audio Cara penggunaannya mirip dengan tag video, 
+di dalamnya bisa kita tambahkan tag source
+<audio controls> 
+        <source src="audio.mp3">
+</audio>
+Audio tidak akan muncul jika tidak ada atribute controls
+
+        Inline Frame
+Pada saat membuat halaman web, kadang kita ingin menampilkan halaman web lain 
+pada halaman tersebut Pada kasus seperti itu, kita bisa menggunakan Inline Frame 
+Inline Frame di HTML bisa menggunakan tag <iframe></iframe> 
+Inline Frame sangat banyak digunakan oleh banyak orang, contoh nya 
+di Youtube menggunakan Inline Frame ketika kita mau menampilkan video Youtube di website kita
+<iframe src="nama web" frameborder="1" width="" height=""></iframe>
+Frame border itu untuk memberi border pada tampilannya,jika frameborder="0" maka akan tanpa border
