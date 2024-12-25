@@ -53,7 +53,7 @@ Jika ingin memberi gaya berbeda pada setiap kata dalam teks,
 seperti mewarnai kalimat "Aku adalah Progammer" per kata, 
 gunakan <span> untuk masing-masing kata, karena <p> akan mengubah seluruh teks sekaligus. 
 
- Vidio
+        Vidio
 Selain gambar, HTML juga mendukung untuk menampilkan video di halaman web yang kita buat 
 Namun perlu diperhatikan, tidak semua jenis video bisa dijalankan oleh Web Browser 
 Biasanya format video yang banyak digunakan adalah mp4, webm atau ogg 
