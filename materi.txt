@@ -18,7 +18,7 @@ di search bar Web Browser
 HTML memiliki fitur Link (Tautan), dimana kita bisa meng-klik Link tersebut, dan berpindah ke halaman HTML lain 
 Link tidak harus dalam bentuk Text, Link juga bisa dalam bentuk Gambar misalnya
 
-        Picture atau Media Responsif
+        Picture
 Selain untuk menampilkan gambar menggunakan tag img, di HTML juga bisa menggunakan tag picture untuk menampilkan gambar 
 Salah satu keuntungan menggunakan tag picture adalah
 kita bisa menggunakan beberapa lokasi gambar, dan bisa diatur sesuai dengan ukuran layar misalnya. 
@@ -71,9 +71,9 @@ kita bisa gunakan tag source Sama seperti di picture, dan kita bisa menambahkan 
 Selain gambar, video, HTML juga mendukung untuk audio Untuk audio, 
 kita bisa menggunakan tag audio Cara penggunaannya mirip dengan tag video, 
 di dalamnya bisa kita tambahkan tag source
-<audio controls> 
+  <audio controls> 
         <source src="audio.mp3">
-</audio>
+  </audio>
 Audio tidak akan muncul jika tidak ada atribute controls
 
         Inline Frame
@@ -82,5 +82,54 @@ pada halaman tersebut Pada kasus seperti itu, kita bisa menggunakan Inline Frame
 Inline Frame di HTML bisa menggunakan tag <iframe></iframe> 
 Inline Frame sangat banyak digunakan oleh banyak orang, contoh nya 
 di Youtube menggunakan Inline Frame ketika kita mau menampilkan video Youtube di website kita
-<iframe src="nama web" frameborder="1" width="" height=""></iframe>
+   <iframe src="nama web" frameborder="1" width="" height=""></iframe>
 Frame border itu untuk memberi border pada tampilannya,jika frameborder="0" maka akan tanpa border
+
+        Semantic Tag
+Tag article, untuk konten artikel 
+Tag aside, untuk bagian disamping konten, misal sidebar 
+Tag figure, untuk konten ilustrasi, diagram, foto, dan lain-lain 
+Tag figurecaption, untuk keterangan tag figure 
+Tag footer, untuk bagian footer dokumen 
+Tag header, untuk bagian header dokumen 
+Tag main, untuk konten utama dokumen 
+Tag mark, untuk bagian yang ditandai atau highlight 
+Tag nav, untuk bagian navigasi link 
+Tag section, untuk section di dokumen 
+Tag details, untuk bagian yang lebih detail yang bisa pengguna lihat 
+Tag summary, untuk heading untuk tag details 
+Tag time, untuk konten waktu/tanggal
+
+        View Port
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Sebelumnya di materi HTML 5, kita melakukan setting viewport dengan initial-scale=1.0 
+Hal itu dilakukan agar ketika web kita dibuka di mobile (smartphone atau tablet), 
+ukuran web kita mengikuti ukuran layar dari device nya 
+Ingat, tiap handphone walaupun ukuran layar misal 6inch, tapi secara pixel bisa berbeda, 
+oleh karena itu ketika kita buat website dengan ukuran 100px misal, 
+di handphone dengan kepadatan pixel yang besar, bisa jadi ukurannya sangat kecil, dan 
+pada handphone dengan kepadatan pixel rendah, bisa jadi sangat besar Pengatura viewport bisa mengubah
+
+                                  Responsive
+        Element size
+Saat kita membuat web, kadang kita menentukan ukuran element, misal gambar, table, div dan lain-lain 
+Jika ingin response, kita bisa menggunakan % sebagai ukuran element nya, misal 
+ketika kita gunakan nilai 100%, artinya ukurannya akan 100% dari viewport yang tampil di Web Browser, 
+ketika kita mengubah ukuran Web Browser nya, secara otomatis element akan ikut berubah ukurannya
+
+        Text size
+Responsive dengan %, hanya bisa dilakukan di element 
+Bagaimana pada kasus di teks misalnya? Kadang kita ingin membesarkan teks secara otomatis pada layar besar, 
+dan mengecilkan pada ukuran layar kecil 
+Pada kasus seperti ini, kita bisa menggunakan unit vm (viewport width) untuk ukuran font
+
+        Media Query
+Pada kasus seperti gambar, mungkin ketika layar terlalu besar, dan ukuran gambar kecil, 
+secara otomatis gambar akan pecah, oleh karena itu biasanya pada kasus seperti ini, 
+kita akan menyediakan beberapa jenis ukuran gambar Dan untuk melakukannya, 
+biasanya kita akan menggunakan CSS Media Query, seperti yang pernah kita praktekan di 
+materi Picture Materi Media Query akan kita bahas di kelas CSS
+
+        <Tag Lainnya>
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element 
+ctrl + Left click untuk melihat web nya

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Belajar Table</h1>
+    <table style="border: 1px solid black;">
+        <colgroup>
+        <col span="2" style="background-color: olivedrab;">
+        <col style="background-color: mediumvioletred;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">Profil</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10</td>
+                <td>Kirito</td>
+                <td>Aincard</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Ainz</td>
+                <td>Pekalongan</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td rowspan="2">Total</td>
+                <td>Total</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Rata Rata</td>
+                <td>15</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <pre>
+        Table
+    Tag table, digunakan untuk membuat tabel 
+    Tag tr untuk membuat row/baris 
+    Tag th untuk membuat kolom header table 
+    Tag td untuk membuat kolom isi table 
+    Tag caption untuk keterangan table 
+    Tag thead, untuk grup header table 
+    Tag tbody, untuk grup isi table Tag 
+    tfoot, untuk grup footer table
+
+        Colgroup
+    Jika ingin memberi style pada kolom tabel tanpa mengaturnya satu per satu, 
+    gunakan tag <colgroup> untuk mengelompokkan kolom dan <col> untuk setiap kolomnya. 
+    Untuk menerapkan style yang sama ke beberapa kolom sekaligus, gunakan atribut span pada <col>.
+    ~Intinya
+    colgroup: Kelompokkan kolom.
+         col: Tentukan style kolom.
+        span: Terapkan style ke beberapa kolom sekaligus.
+
+        Colspan dan Rowspan
+    Saat kita membuat tabel, kadang kita ingin menggabungkan beberapa kolom 
+    atau beberapa baris, sehingga terlihat menjadi satu kolom 
+    Pada kasus itu, kita bisa menggunakan atribut colspan untuk menggabungkan kolom dalam satu baris yang sama 
+    Atau menggunakan atribut rowspan untuk menggabungkan beberapa kolom di baris yang berbeda
+    colspan untuk baris ke kiri kanan
+    rowspan untuk baris ke bawah
+    </pre>
+</body>
+</html>

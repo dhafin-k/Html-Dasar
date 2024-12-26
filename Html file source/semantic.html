@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            background: #005bb5;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #0073e6;
+        }
+
+        section {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        article h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        article p {
+            color: #666;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer time {
+            color: #0073e6;
+        }
+        
+        pre {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        max-width: 800px;
+        font-family: 'Courier New', Courier, monospace;
+        color: #333;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        white-space: pre-wrap; /* Membuat teks wrap di dalam pre */
+        word-wrap: break-word; /* Menangani kata panjang */
+        }
+
+        pre::before {
+            content: "📚 Semantic Tags";
+            display: block;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #0073e6;
+        }
+
+        pre:hover {
+            background: #e6f7ff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Belajar HTMl Semantic</h1>
+    </header>
+
+    <nav >
+        <a href="#">Beranda</a>
+        <a href="#">Artikel</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <section>
+        <article>
+            <h1>Belajar HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, iure.</p>
+        </article>
+        <article> 
+            <h1>Belajar CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, iure.</p>
+        </article>
+    </section>
+    
+<pre>
+    Semantic Tag
+Tag article, untuk konten artikel 
+Tag aside, untuk bagian disamping konten, misal sidebar 
+Tag figure, untuk konten ilustrasi, diagram, foto, dan lain-lain 
+Tag figurecaption, untuk keterangan tag figure 
+Tag footer, untuk bagian footer dokumen 
+Tag header, untuk bagian header dokumen 
+Tag main, untuk konten utama dokumen 
+Tag mark, untuk bagian yang ditandai atau highlight 
+Tag nav, untuk bagian navigasi link 
+Tag section, untuk section di dokumen 
+Tag details, untuk bagian yang lebih detail yang bisa pengguna lihat 
+Tag summary, untuk heading untuk tag details 
+Tag time, untuk konten waktu/tanggal
+</pre>
+    <footer>
+        <p>All Right Service&#169; by dhafine23 | <time datetime="2023">2024</time></p>
+    </footer>
+</body>
+</html>
+
