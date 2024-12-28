@@ -1,6 +1,7 @@
 
                   HTML (HyperText Markup Language)
 
+Struktur dari sebuah Web
 Void elements digunakan untuk elemen yang tidak memiliki konten, seperti <img> atau <br>.
 Non-void elements digunakan untuk elemen yang memerlukan konten atau struktur, seperti <p> atau <div>.
 
