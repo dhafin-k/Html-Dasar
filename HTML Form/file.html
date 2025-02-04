@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="recive.html" method="post" enctype="multipart/form-data">
+        <label for="profile">Upload Profile :</label> <br>
+        <input type="file" name="profile" id="profile"> <br>
+        <input type="submit" value="kirim">
+    </form>
+    <pre>
+        input File
+    input type file di gunakan untuk meng-upload berkas file dari komputer kita 
+    saat kita membuat input type file, maka agar form mengirim berkas file nya kita
+    menggunakan method 'post' dan juga enctype menggunakan multi/form-data
+    jika kita menggunakan method 'get' maka data yang dikirim berupa query parameter
+        dan file itu tidak akan di kirim, karna file itu tidak bisa d simpan dalam query parameter
+    </pre>
+</body>
+</html>

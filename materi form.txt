@@ -1,0 +1,55 @@
+
+                HTML Form 
+
+Form Tag adalah tag dengan kata kunci form, 
+yang digunakan sebagai bagian dari input informasi yang diberikan oleh pengguna 
+Setiap kita ingin membuat input informasi dari pengguna, maka kita harus buat dalam Form Tag
+
+    Form Tag
+Berikut adalah atribut yang penting pada form :
+    name, berisi informasi nama form, nama form harus unik dalam satu file html, tidak boleh ada nama form yang sama
+    action, berisi URL (bisa absolute atau relative) kemana informasi di form ini akan dikirim
+    enctype, berisi tipe data form, defaultnya "application/x-www-form-urlencoded", atau 
+    "multipart/form-data" jika input data berisi file
+    method, berisi aksi HTTP Method yang akan digunakan,
+        jika "get" maka informasi akan dikirim sebagai query parameter di URL (defaultnya) yang dimana input nya akan muncul di URL, 
+        jika "post" maka informasi akan dikirim di request body HTTP
+    target, berisikan informasi dimana hasil form ini akan ditampilkan,
+    defaultnya adalah "_self" (dihalaman yang sama), atau "_blank" (di halaman berbeda)
+
+enctype itu atribut di <form> HTML yang ngatur cara data formulir dikodekan waktu dikirim ke server.
+    Ada 3 tipe utama:
+        application/x-www-form-urlencoded (default): buat data teks biasa.
+        multipart/form-data: buat upload file.
+        text/plain: buat kirim data polos (jarang dipakai).
+
+    input atribute 
+HTML Form mendukung banyak sekali jenis input, dan untuk mengatur jenis input, kita harus mengubahnya menggunakan attribute.
+Ada beberapa attribute yang perlu kita ketahui di input :
+    name, digunakan untuk memberi nama input, nama input harus unik dalam form yang sama, tidak boleh ada yang sama. 
+    type, digunakan untuk memilih jenis input, kita akan bahas lebih detail untuk jenis-jenis tipe input yang tersedia di HTML 
+    value, digunakan untuk mengubah nilai default dari input 
+    disabled, digunakan untuk menjadikan input tidak aktif 
+    readonly, digunakan untuk menjadikan input tidak bisa diubah
+    required, digunakan untuk menandai bahwa input wajib diisi
+
+        Form Action
+untuk mengirim data di form, kita harus tentukan kemana semua input data akan dikirim 
+menggunakan attribute "action" pada form 
+Kita juga bisa menentukan jenis method, baik itu "get" atau "post" ketika mengirim input
+    memproses Input
+HTML adalah halaman web yang di tampilkan di client (Web Browser), 
+sehingga HTML tidak bisa digunakan untuk memproses input data dari form 
+Untuk memproses data, kita harus menggunakan teknologi berbasis server, 
+misal contohnya adalah PHP, NodeJS, Java, dan masih banyak yang lainnya
+    Required 
+Formulir: Jika sebuah kolom bertanda "required," itu berarti kolom tersebut harus diisi.
+Aturan: Jika suatu tindakan "required," maka itu tidak bisa dilewati atau diabaikan.
+contoh :
+    <input type="email" name="gmail" id="gmail" required>
+Sederhananya, "required" berarti tidak boleh dilewatkan.
+    Min & Max 
+Sebuah Atribut yang berada pada input ini bisa di gunakan untuk memberi batasan 
+Min untuk Minimal 
+Max Untuk Maximal | Penggunaan nya:
+    <input type="number" name="nilai_ujian" id="nilai_ujian" min="0" max="100" value="0">

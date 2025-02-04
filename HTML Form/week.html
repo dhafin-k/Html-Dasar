@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="bulan_peringatan">Bulan peringatan :</label><br>
+        <input type="week" name="bulan_peringatan" id="bulan_peringatan" value="2024-W01"><br>
+        <label for="bulan_libur">Bulan liburan :</label><br>
+        <input type="week" name="bulan_libur" id="bulan_libur" value="2024-W24"> <br>
+        <input type="submit" value="Simpan">
+    </form>
+
+    <pre>
+        Total minggu pertahun berkisar antara 52-53,artinya
+            itu adalah nilai maksimal untuk Week
+        format penulisan week bisa menggunakan yyyy-ww 
+        yyyy yaitu tahun dalam 4 digit 
+        ww yaitu bulan dalam 2 digit 
+        untuk membatasi minimal atau maksimal bulan yang di pilih, 
+        kita bisa gunakan atribut min dan max
+    </pre>
+</body>
+</html>
